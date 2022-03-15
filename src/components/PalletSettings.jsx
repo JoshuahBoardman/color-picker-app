@@ -11,11 +11,13 @@ const PalletSettings = () => {
           <input type="number" className="color-pallet-size-text" id="color-pallet-size-text" />
         </div>
 
-        <label htmlFor="color-pallet-display">Display Type:</label>
-        <select name="" id="color-pallet-display-type" className="color-pallet-display-type">
-                <option value="pallet">Pallet</option>
-                <option value="gradiant">Gradiant</option>
-          </select>
+        <div className="color-pallet-display-type-wrapper">
+          <label htmlFor="color-pallet-display">Display Type:</label>
+          <select name="" id="color-pallet-display-type" className="color-pallet-display-type">
+                  <option value="pallet">Pallet</option>
+                  <option value="gradiant">Gradiant</option>
+            </select>
+        </div>
       </form>
           
     </>

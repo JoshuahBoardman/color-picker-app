@@ -1,9 +1,9 @@
 import React from 'react'
 import Color from './Color'
 
-const ColorPalletDisplay = () => {
+const ColorPalletDisplay = ({ interfaceWidth }) => {
   return (
-    <main className='color-pallet-display'>
+    <main className='color-pallet-display' style={{marginLeft: interfaceWidth + "rem"}}>
         <h2 className="color-pallet-title">Click a color to change</h2>
         <div className="color-pallet">
             <Color />

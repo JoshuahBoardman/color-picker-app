@@ -1,9 +1,12 @@
 import React from 'react'
 
-const Header = () => {
+const Header = ({ interfaceWidth, handleIsInterfaceOpen}) => {
   return (
     <header className='header'>
-        <h1 className="logo">Color Pallet Builder</h1>
+        <button className="open-btn" onClick={() => handleIsInterfaceOpen()}>
+          <i className="fa-solid fa-bars"></i>
+        </button>
+        <h1 className="logo" style={{marginLeft: interfaceWidth + "rem"}}>Color Pallet Builder</h1>
     </header>
   )
 }
