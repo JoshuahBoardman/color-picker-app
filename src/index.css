@@ -1,1 +1,200 @@
+/* Global Style */
 
+:root {
+    /* Colors */
+    --color-400: hsl(245, 10%, 19%);
+    --color-600: hsl(245, 10%, 14%);
+    --color-800: hsl(245, 10%, 9%);
+    --color-shadow: hsla(245, 10%, 4%, 20%)
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-800);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+} 
+
+/* Typography */
+
+
+/* Header */
+
+header {
+    position:fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--color-400);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 .2rem var(--color-shadow);
+    z-index: 1000;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+/* SIDEBAR */
+/* Color Pallet Interface */
+
+.color-pallet-interface {
+    background-color: var(--color-600);
+    height: 100vh; 
+    width: 20rem; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    overflow-x: hidden; 
+    padding-top: 6rem; 
+    transition: 0.5s; 
+    box-shadow: .2rem .2rem var(--color-shadow);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.color-pallet-interface-inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+}
+
+.color-pallet-interface-header {
+    align-self: center;
+}
+
+.color-pallet-interface-body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Color Pallet Interface - pallet settings */
+
+.pallet-settings-header {
+    margin-top: 2rem;
+}
+
+.pallet-settings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.color-pallet-size-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.color-pallet-size-range {
+    width: 60%;
+}
+
+.color-pallet-size-text {
+    width: 3rem;
+    border-radius: .25rem;
+    padding: .5rem;
+}
+
+.color-pallet-display-type {
+    border-radius: .25rem;
+    padding: .5rem;
+    margin-top: 1rem;
+}
+
+/* Color Pallet Interface - color picker */
+
+ .color-picker {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.color-picker-header {
+    margin-top: 1rem;
+}
+
+.color-picker .react-colorful {
+    border-radius: .25rem;
+    margin: .75rem 0 1.5rem;
+    width: 100%;
+}
+
+.color-picker-form {
+    display: flex;
+    flex-direction: column;
+} 
+
+.input-pair {
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.color-input {
+    font-weight: 700;
+    border-radius: .25rem;
+    padding: .5rem;
+    width: 100%;
+    
+}
+
+/* Color Pallet Display */
+
+.color-pallet-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin-left: 20rem;
+    min-width: 60vw;
+}
+
+.color-pallet-title{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.color-pallet {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.color-pallet-title {
+    margin-bottom: 1rem;
+}
+
+/* Color */
+
+.color {
+    background-color: #fff;
+    width: 10rem;
+    height: 10rem;
+    border-radius: .25rem;
+    overflow: hidden;
+    box-shadow: .1rem .2rem var(--color-shadow);
+}

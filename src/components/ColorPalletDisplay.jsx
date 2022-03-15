@@ -1,13 +1,25 @@
 import React from 'react'
+import Color from './Color'
 
 const ColorPalletDisplay = () => {
   return (
-    <div className='color-pallet-display'>
-        <h2 className="color-pallet-title">Color Pallet</h2>
-        <div className="color-pallet-choices">
-            Pallet Colors
+    <main className='color-pallet-display'>
+        <h2 className="color-pallet-title">Click a color to change</h2>
+        <div className="color-pallet">
+            <Color />
+            <Color />
+            <Color />
+            <Color />
+            <Color />
+            <Color />
+            <Color />
+            <Color />
+            <Color />
+            <Color />
+            <Color />
+            <Color />
         </div>
-    </div>
+    </main>
   )
 }
 
