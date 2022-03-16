@@ -129,7 +129,7 @@ header {
 }
 
 .color-pallet-size-range {
-    width: 750%;
+    width: 73%;
 }
 
 .color-pallet-size-text {
@@ -137,6 +137,7 @@ header {
     width: 3rem;
     border-radius: .25rem;
     padding: .5rem;
+    width: 20%;
 }
 
 .color-pallet-display-type-wrapper {
@@ -230,4 +231,5 @@ header {
     border-radius: .25rem;
     overflow: hidden;
     box-shadow: .1rem .2rem var(--color-shadow);
+    cursor: pointer;
 }

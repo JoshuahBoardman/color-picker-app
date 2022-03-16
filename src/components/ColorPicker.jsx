@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { HexColorPicker } from "react-colorful";
 
-const ColorPicker = () => {   
-    const [ color, setColor ] = useState("#fff")
+const ColorPicker = ({ color, setColor}) => {   
+  console.log(color)
 
     // This Component handles the selecting of a color
   return (

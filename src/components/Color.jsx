@@ -1,9 +1,10 @@
 import React from 'react'
 
-const Color = () => {
+const Color = ({ palletColor, setPallet, color, setColor }) => {
+  console.log(palletColor)
   return (
-    <div className="color">
-        <span>#1fc5ff</span>
+    <div className="color" style={{backgroundColor: palletColor.color}} onClick={() => setColor(palletColor.color)}>
+        <span>{palletColor.color}</span>
     </div>
   )
 }
