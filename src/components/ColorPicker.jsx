@@ -1,8 +1,7 @@
 import React from 'react'
 import { HexColorPicker } from "react-colorful";
 
-const ColorPicker = ({ color, setColor}) => {   
-  console.log(color)
+const ColorPicker = ({ color, setColor }) => {  
 
     // This Component handles the selecting of a color
   return (

@@ -15,7 +15,7 @@ const ColorPalletInterface = ({ handleIsInterfaceOpen, interfaceWidth, colorPall
           <h2 className='color-pallet-interface-header'>Pallet Menu</h2>
               <div className="color-pallet-interface-body">
                 <PalletSettings colorPalletSize={colorPalletSize} setColorPalletSize={setColorPalletSize}/>
-                <ColorPicker color={color} setColor={setColor}/>
+                <ColorPicker color={color} setColor={setColor} />
               </div>
       </div>
       <button className="close-btn" onClick={() => handleIsInterfaceOpen()}>

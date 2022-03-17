@@ -2,7 +2,6 @@ import React from 'react'
 
 const PalletSettings = ({ colorPalletSize, setColorPalletSize }) => {
 
-
   return (
     <>
       <h3 className="pallet-settings-header">Pallet Settings</h3>
