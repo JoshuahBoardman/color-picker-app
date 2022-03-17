@@ -12,13 +12,15 @@ const PalletSettings = ({ colorPalletSize, setColorPalletSize }) => {
           <input type="number" className="color-pallet-size-text" id="color-pallet-size-text"  min={3} max={16} value={colorPalletSize} onChange={e => setColorPalletSize(e.target.value)} />
         </div>
 
-        <div className="color-pallet-display-type-wrapper">
+        {/* TODO: add gradiant display */}
+         
+        {/* <div className="color-pallet-display-type-wrapper">
           <label htmlFor="color-pallet-display">Display Type:</label>
           <select name="" id="color-pallet-display-type" className="color-pallet-display-type">
                   <option value="pallet">Pallet</option>
                   <option value="gradiant">Gradiant</option>
             </select>
-        </div>
+        </div> */}
       </form>
           
     </>

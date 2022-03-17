@@ -2,6 +2,7 @@
 
 :root {
     /* Colors */
+    --color-200: hsl(245, 10%, 24%);
     --color-400: hsl(245, 10%, 19%);
     --color-600: hsl(245, 10%, 14%);
     --color-800: hsl(245, 10%, 9%);
@@ -30,6 +31,9 @@ body {
 
 /* Typography */
 
+label {
+    font-weight: 700;
+}
 
 /* Header */
 
@@ -111,8 +115,10 @@ header {
 /* Color Pallet Interface - pallet settings */
 
 .pallet-settings-header {
-    margin: 3rem 0 .5rem;
-    
+    font-size: 1.3rem;
+    border-bottom: .1rem solid var(--color-200);
+    padding-bottom: .5rem;
+    margin: 3rem 0 2rem;
 }
 
 .pallet-settings {
@@ -153,6 +159,7 @@ header {
 }
 
 .color-pallet-size-text {
+    font-weight: 700;
     color: var(--color-800);
     width: 3rem;
     border-radius: .25rem;
@@ -183,6 +190,9 @@ header {
 }
 
 .color-picker-header {
+    font-size: 1.3rem;
+    border-bottom: .1rem solid var(--color-200);
+    padding-bottom: .5rem;
     margin: .5rem 0 .75rem;
 }
 
@@ -225,6 +235,7 @@ header {
     padding: 2rem;
     min-width: 60vw;
     transition: 0.5s; 
+    margin-top: 4rem;
 }
 
 .color-pallet-title{
@@ -234,22 +245,29 @@ header {
 
 .color-pallet {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
 }
 
 .color-pallet-title {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 /* Color */
 
 .color {
     background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: .25rem;
     width: 10rem;
     height: 10rem;
-    border-radius: .25rem;
     overflow: hidden;
     box-shadow: .1rem .2rem var(--color-shadow);
     cursor: pointer;
+}
+
+.color-value {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
 }

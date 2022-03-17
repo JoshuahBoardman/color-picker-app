@@ -16,12 +16,12 @@ const Color = ({ palletColor, setColor, selcetedPalletItem,  setSelectedPalletIt
 
   return (
     <div className="color" 
-      style={ selcetedPalletItem.id === palletColor.id ?{backgroundColor: palletItemColor, border: ".2rem solid #fff", borderRadius: ".25rem"} : 
+      style={ selcetedPalletItem.id === palletColor.id ?{backgroundColor: palletItemColor, border: ".15rem solid #fff", borderRadius: ".25rem"} : 
       {backgroundColor: palletItemColor}
       } 
       onClick={handleOnClick}
     >
-        <span>{palletItemColor}</span>
+        <h4 className='color-value'>{palletItemColor}</h4>
     </div>
   )
 }
