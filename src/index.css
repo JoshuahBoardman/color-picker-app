@@ -129,7 +129,27 @@ header {
 }
 
 .color-pallet-size-range {
+    -webkit-appearance: none;
+    background: var(--color-800);
+    border-radius: .25rem;
+    height: .4rem;
     width: 73%;
+    opacity: 0.7;
+}
+
+.color-pallet-size-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: #fff;
+    border-radius: 50%; 
+    width: .75rem;
+    height: .75rem;
+}
+
+.color-pallet-size-range::-moz-range-thumb {
+    background: #fff;
+    border-radius: 50%; 
+    width: .75rem;
+    height: .75rem;
 }
 
 .color-pallet-size-text {

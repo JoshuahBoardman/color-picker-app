@@ -16,8 +16,11 @@ const Color = ({ palletColor, setColor, selcetedPalletItem,  setSelectedPalletIt
 
   return (
     <div className="color" 
-      style={{backgroundColor: palletItemColor}} 
-      onClick={handleOnClick}>
+      style={ selcetedPalletItem.id === palletColor.id ?{backgroundColor: palletItemColor, border: ".2rem solid #fff", borderRadius: ".25rem"} : 
+      {backgroundColor: palletItemColor}
+      } 
+      onClick={handleOnClick}
+    >
         <span>{palletItemColor}</span>
     </div>
   )
