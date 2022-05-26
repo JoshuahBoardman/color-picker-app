@@ -14,13 +14,13 @@ const PalletSettings = ({ colorPalletSize, setColorPalletSize }) => {
 
         {/* TODO: add gradiant display */}
          
-        {/* <div className="color-pallet-display-type-wrapper">
+        <div className="color-pallet-display-type-wrapper">
           <label htmlFor="color-pallet-display">Display Type:</label>
           <select name="" id="color-pallet-display-type" className="color-pallet-display-type">
                   <option value="pallet">Pallet</option>
                   <option value="gradiant">Gradiant</option>
             </select>
-        </div> */}
+        </div>
       </form>
           
     </>
